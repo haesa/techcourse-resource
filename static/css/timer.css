@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+}
+
+#main {
+  position: relative;
+}
+
+#timer {
+  display: flex;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  width: 350px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+}
+
+.hours,
+.minutes,
+.seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 15px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+}
+
+.numbers {
+  font-family: sans-serif;
+  font-size: 4em;
+}

@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap");
+/* basic tag css */
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+html,
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: #20100c;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffe4c4;
+  font-size: 1.3em;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+input,
+button {
+  outline: none;
+}
+
+/* menu_bar */
+#menu_bar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  margin-bottom: 10px;
+  font-weight: bold;
+  /* margin: 10px 0px; */
+  background-color: #321911;
+  align-items: center;
+  border-bottom: 15px solid #f5deb3;
+}
+
+#title > a {
+  font-size: 30px;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2#team_name {
+  text-align: right;
+}
+
+#menu_bar > div {
+  vertical-align: middle;
+  margin-left: 25px;
+}
+.menu > a:hover {
+  color: pink;
+}
+
+#timer {
+  position: absolute;
+  top: 8;
+  right: 50;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+}
+
+/* notice_bar */
+#notice_bar {
+  position: fixed;
+  left: 15;
+  bottom: 50;
+  height: 10px;
+  width: 400px;
+}
+
+#notice_bar > div {
+  display: inline-block;
+  height: 30px;
+  padding: 5px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  width: 30px;
+}
+
+#notice_bar > div:hover {
+  box-shadow: 1px 1px 15px rgb(150, 32, 32);
+}
+
+#notice_bar .icon_notice {
+  background-image: url("/static/img/notice.png");
+  background-size: contain;
+  filter: invert(1);
+  width: 100%;
+  height: 100%;
+}
+
+/**/
+#main {
+  width: 100%;
+}
+
+/* popup */
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #151515cc;
+}
+
+.popup .popup_frame {
+  position: fixed;
+  display: table;
+  background-color: #523a28;
+  box-shadow: 1px 1px 15px bisque;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid bisque;
+  height: 80%;
+}
+
+.popup .popup_frame .prob_frame {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 50px;
+}
+
+.popup.challenge tr:hover,
+.popup.notice tr:hover,
+.popup.team tr:hover {
+  background-color: #222;
+}
+
+.popup .popup_frame table td {
+  padding: 5px 10px;
+}
+
+.popup button {
+  margin: 10px 0px;
+  padding: 5 10;
+  width: 40%;
+  border: none;
+  background-color: bisque;
+  color: #523a28;
+  box-shadow: 1px 1px 10px #5e4634;
+}
+
+.popup button:hover {
+  box-shadow: 1px 1px 10px #aaa;
+}
+
+.popup a {
+  font-size: 1em;
+}
+
+.popup a:hover {
+  text-decoration: underline;
+}
+
+/* notice popup */
+.popup.notice h2 {
+  text-align: center;
+  height: 6%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.popup.notice .popup_frame div {
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.popup.notice table {
+  width: 100%;
+  /*height: 100%;*/
+}
+
+.popup.notice table td {
+  border: 1px solid #833a;
+  padding: 10px 15px;
+}
+
+/* challenge popup */
+.popup.challenge .prob_frame {
+  padding: 0 50px;
+}
+
+.popup.challenge .prob_frame div {
+  margin: 30px auto;
+  width: 90%;
+  word-break: break-all;
+  text-align: center;
+}
+
+.popup.challenge .name {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.popup.challenge .score {
+  font-size: 1.4em;
+}
+
+.popup.challenge .category {
+  width: 80px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 5px auto;
+}
+
+.popup.challenge .descript {
+  height: 25%;
+  overflow-y: scroll;
+  border: 3px dashed bisque;
+}
+
+.popup.challenge .description {
+  margin: 10px;
+  line-height: 1.5;
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.popup.challenge .description a {
+  font-weight: bold;
+}
+
+.popup.challenge .flag input {
+  padding: 5px;
+  width: 40%;
+}
+
+.popup.challenge .flag button {
+  width: 20%;
+}
+
+.popup.challenge .log {
+  height: 15%;
+  overflow-y: scroll;
+}
+
+.popup.challenge .log table {
+  font-size: 0.8em;
+}
+
+@media (max-width: 1500px) {
+  .popup.challenge .flag {
+    width: 80% !important;
+  }
+  .popup.challenge .flag input {
+    width: 40%;
+  }
+  .popup.challenge .flag button {
+    width: 20%;
+  }
+}
+
+/* team popup */
+.popup.team .name {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.popup.team .score {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.popup.team .bingo {
+  font-style: italic;
+}
+
+.popup.team .log {
+  height: 330px;
+  overflow-y: scroll;
+  font-size: 0.8em;
+  margin: 20px auto;
+}
+
+/* info popup */
+.popup.info h2 {
+  margin: 0 0 30px 0;
+}
+
+.popup.info p {
+  margin: 20 0;
+  font-size: 0.9em;
+  padding: 0 20;
+}
+.popup.info p b {
+  font-size: 1.1em;
+}
+
+/* password change popup*/
+.popup.chpw {
+  text-align: center;
+}
+
+.popup.chpw input {
+  padding: 10 20;
+  border-radius: 5px;
+}
+
+/* side menu */
+#side_menu {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  width: 300px;
+  z-index: 10;
+  font-family: "Nunito", sans-serif;
+}
+
+#side_menu div {
+  text-align: right;
+  margin: 20 0;
+}
+
+#side_menu div:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  #side_menu {
+    width: 100px;
+  }
+}
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cd853f;
+  border-radius: 5px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}

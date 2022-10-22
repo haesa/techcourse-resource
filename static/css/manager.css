@@ -1,0 +1,67 @@
+body {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+  body {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    width: 90%;
+  }
+}
+
+hr {
+  margin: 20px 0px;
+  box-shadow: 0px 0px 9px #aaa;
+  border: 1px solid #ccc;
+}
+
+#menu {
+  background-color: #cdf;
+  padding: 20px 50px;
+}
+
+li {
+  width: 100px;
+  padding: 5px 1px;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+form textarea {
+  width: 100%;
+  height: 200px;
+}
+
+form input,
+select {
+  padding: 5px 10px;
+}
+
+p.ctf-status:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+p.ctf-status.start:before {
+  background-color: green;
+}
+p.ctf-status.stop:before {
+  background-color: red;
+}

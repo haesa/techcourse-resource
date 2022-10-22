@@ -1,0 +1,162 @@
+#main {
+  display: table;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* #main > p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+} */
+
+#main .title p {
+  text-align: center;
+  font-family: "Special Elite", cursive;
+  font-size: 4em;
+  margin: 0;
+  margin-top: 5%;
+}
+
+/* #main .img {
+      background: url('/static/img/pox1.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      filter: invert(8.2%);
+      width: 500px;
+      height: 500px;
+      margin: 50px auto;
+  } */
+
+#main .header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 80px;
+}
+
+#main .header .btn button {
+  background-color: black;
+  color: #fff;
+  border: 1px solid black;
+  margin-left: 15px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+}
+
+img {
+  width: 115px;
+  height: 50px;
+  margin-right: 450px;
+  margin-bottom: -10px;
+}
+
+#main .header .btn:hover {
+  text-decoration: underline;
+}
+
+#cnt {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 10px #fff;
+  font-size: 48px;
+  letter-spacing: 5px;
+  margin-top: 20%;
+}
+
+.popup.login form table {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: auto;
+  color: #fff;
+}
+
+.popup.login form table td {
+  text-align: left;
+  margin: 15px;
+}
+
+.popup.login h3 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.popup.login form input {
+  width: 100%;
+}
+
+.popup.login form input[name="username"],
+.popup.login form input[name="password"] {
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0 0 3px #fff;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  font-size: 12pt;
+}
+
+.popup.login form input[type="submit"] {
+  margin-top: 15px;
+  background-color: #151515;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.popup.login form input[type="submit"]:hover {
+  box-shadow: 0 0 5px #fff;
+  color: #ff9595;
+}
+
+.popup.signup form table {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: auto;
+  color: #fff;
+}
+
+.popup.signup form table td {
+  text-align: left;
+  margin: 15px;
+}
+
+.popup.signup h3 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.popup.signup form input {
+  width: 100%;
+}
+
+.popup.signup form input[name="username"],
+.popup.signup form input[name="nickname"],
+.popup.signup form input[name="password"],
+.popup.signup form input[name="email"] {
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0 0 3px #fff;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  font-size: 12pt;
+}
+.popup.signup form input[type="submit"] {
+  margin-top: 15px;
+  background-color: #151515;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.popup.signup form input[type="submit"]:hover {
+  box-shadow: 0 0 5px #fff;
+  color: #ff9595;
+}
